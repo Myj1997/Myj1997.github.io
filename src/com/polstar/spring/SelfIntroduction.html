@@ -8,19 +8,22 @@
 
     <link href="/resources/css/selfIntroduction.css" rel="stylesheet">
 
+    <script type="text/javascript" src="/resources/js/selfIntroduction.js"></script>
 </head>
-<body style="background : lightgray;">
+<body id="body1" style="background : lightgray;">
     <div class="container">
         <header class="d-flex justify-content-center py-3 header">
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#" class="nav-link">자기소개서</a></li>
+                <button onclick="btnClick()" id="btn1" class="btn-lg btn-primary">hi</button>
+                <input type="hidden" value="0" id="inputHidden">
             </ul>
         </header>
 
     <div class="row g-5">
         <img src="/resources/img/다운로드.png" onclick="img_click()" class="col-6 img-thumbnail img">
 
-        <div class="col-xl-6 mb-4 bg-light rounded-3" style="width : 48%;">
+        <div id="humanInfo" class="col-xl-6 mb-4 bg-light rounded-3" style="width : 48%;">
             <div class="py-5 cof">
                 <h5 class=" fw-bold" style="margin-bottom : 3%">인적사항</h5>
                 <table>
